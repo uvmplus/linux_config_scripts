@@ -28,14 +28,14 @@
 | `pip_config.sh`       | 配置 pip 使用清华大学镜像源                                    |                                          |
 | `install_gdbinit.sh`  | 下载 gdb-dashboard 的 `.gdbinit` 配置文件并安装 `pygments`    |                                          |
 | `ssh_config.sh`       | 生成 SSH 密钥 (ed25519)，添加到 ssh-agent，配置 Git 用户信息 | **需要修改邮箱和用户名** |
-| `ssh.sh`              | 功能与 `ssh_config.sh` 类似                                  | **需要修改邮箱和用户名**，功能重复       |
+
 
 ## 🛠️ 使用方法
 
 1.  **克隆仓库:**
     ```bash
-    git clone <你的仓库地址>
-    cd <仓库目录名> # 通常是 patch_scripts
+    git clone https://github.com/uvmplus/linux_config_scripts.git
+    cd linux_config_scripts
     ```
 
 2.  **赋予执行权限:**
@@ -79,13 +79,8 @@
 * **个性化配置:** 这些脚本是个人配置，不一定完全适用于所有用户或所有环境。请根据自己的需求进行调整。
 * **硬编码信息:** 脚本中可能包含硬编码的用户名（如 `belle`）、邮箱地址或特定版本号。请务必查找并替换为你自己的信息。
 * **脚本依赖:** 某些脚本可能依赖于其他脚本先执行（例如，安装 `zsh` 后才能配置 `conda` 到 `.zshrc`）。
-* **重复脚本:** 仓库中包含功能相似的脚本 (`install_pack.sh` vs `package.sh`, `ssh_config.sh` vs `ssh.sh`)。建议清理或合并，保留你需要的版本。
 * **网络依赖:** 大部分脚本需要连接互联网以下载软件包或配置文件。
 
 ## 🤝 贡献
 
 如果你发现任何问题或有改进建议，欢迎提交 Issues 或 Pull Requests。
-
-## 📄 许可证 (建议)
-
-建议为你的仓库选择一个开源许可证，例如 MIT 许可证。
